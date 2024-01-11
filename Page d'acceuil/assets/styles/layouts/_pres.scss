@@ -1,0 +1,64 @@
+.pres {
+    max-width: 95%;
+    height: 40vh;
+    margin: 100px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .pp {
+        background: url(../img/pp2.jpg) center/cover ;
+        min-width: 338px;
+        min-height: 320px;
+        height: 90%;
+        border-radius: 15px;
+        margin-right: 20px;
+        cursor: pointer;
+
+    }
+
+    .pp2 {
+        background: url(../img/pp3.jpg) center/cover;
+        min-width: 338px;
+        min-height: 320px;
+        height: 90%;
+        border-radius: 15px;
+        margin-right: 20px;
+        cursor: pointer;
+
+    }
+
+
+
+    .pres-right {
+        background: $color2;
+        height: 90%;
+        min-height: 320px;
+        border-radius: 15px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            font-family: $font2;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 2rem;
+        }
+
+        a{
+            text-decoration-line: underline;
+        }
+
+    }
+}

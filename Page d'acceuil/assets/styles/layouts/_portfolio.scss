@@ -1,0 +1,93 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    h2 {
+        font-family: $font2;
+        font-size: 3rem;
+        color: $color2;
+        text-shadow: 2px 3px 1px black;
+        margin-bottom: 50px;
+    }
+
+    .thumbnails-container {
+        min-width: 90%;
+        min-height: 70vh;
+        padding: 10px;
+        background: $color2;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        gap: 10px;
+
+        .thumbnail {
+            width: 90%;
+            height: 90%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+
+            h3 {
+                height: 100%;
+                width: 100%;
+                color: $white1;
+                text-shadow: 2px 3px 1px black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                }
+            }       
+         }
+
+         .thumbnail:nth-child(1) {
+             background: url(../img/Le\ resto.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail:nth-child(2) {
+             background: url(../img/gamingcampus.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail:nth-child(3) {
+             background: url(../img/bubblegenerator.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail:nth-child(4) {
+             background: url(../img/La\ montagne.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail:nth-child(5) {
+             background: url(../img/Run.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail:nth-child(6) {
+             background: url(../img/Bit.JPG) center/cover;
+             backdrop-filter: blur();
+         }
+         .thumbnail::before {
+            content: ''; 
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1; 
+            background: inherit; 
+            border-radius: 10px;
+            filter: blur(2px);
+        }
+    }
+}
